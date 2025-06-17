@@ -233,6 +233,8 @@ console.log(data)
       render: (_, record) => (
         <Tippy
           className="bg-white border shadow"
+          interactive
+          appendTo={() => document.body}
           content={
             <div>
               <div
@@ -264,7 +266,6 @@ console.log(data)
           placement="bottom"
           trigger="mouseenter"
           arrow={false}
-          interactive
         >
           <Button icon={<IconDots />} />
         </Tippy>
